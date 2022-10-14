@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph_main"
+    app:startDestination="@id/teaListFragment">
+
+    <fragment
+        android:id="@+id/basketFragment"
+        android:name="com.example.mobilka.presentation.fragments.BasketFragment"
+        android:label="BasketFragment" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.mobilka.presentation.fragments.ProfileFragment"
+        android:label="ProfileFragment" />
+    <fragment
+        android:id="@+id/teaListFragment"
+        android:name="com.example.mobilka.presentation.fragments.TeaListFragment"
+        android:label="TeaListFragment" />
+</navigation>

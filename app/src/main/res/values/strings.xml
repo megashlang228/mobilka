@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">CoffeeGo</string>
+    <string name="splash">splash</string>
+    <string name="login">login</string>
+    <string name="home">home</string>
+    <string name="title_tea_list">tea</string>
+    <string name="title_basket">basket</string>
+    <string name="title_profile">profile</string>
+    <string name="coffee_to_go">CoffeeToGo</string>
+    <string name="on_boardind">on_boardind</string>
+</resources>
