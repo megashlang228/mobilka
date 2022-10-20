@@ -7,6 +7,7 @@ import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.example.mobilka.R
+import com.example.mobilka.presentation.fragments.login.LoginFragment
 
 
 class WelcomeFragment : Fragment(R.layout.fragment_welcome){
