@@ -10,10 +10,10 @@
         android:label="BasketFragment" />
     <fragment
         android:id="@+id/profileFragment"
-        android:name="com.example.mobilka.presentation.fragments.ProfileFragment"
+        android:name="com.example.mobilka.presentation.fragments.profile.ProfileFragment"
         android:label="ProfileFragment" />
     <fragment
         android:id="@+id/teaListFragment"
-        android:name="com.example.mobilka.presentation.fragments.TeaListFragment"
+        android:name="com.example.mobilka.presentation.fragments.coffeelist.TeaListFragment"
         android:label="TeaListFragment" />
 </navigation>

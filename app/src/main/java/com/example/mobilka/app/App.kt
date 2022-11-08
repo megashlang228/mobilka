@@ -39,6 +39,6 @@ class App: Application() {
     }
 
     companion object{
-        const val URL = "http://server.krea-company.keenetic.pro/"
+        const val URL = "http://192.168.144.64:8080/"
     }
 }

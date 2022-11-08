@@ -8,4 +8,8 @@
     <string name="title_profile">profile</string>
     <string name="coffee_to_go">CoffeeToGo</string>
     <string name="on_boardind">on_boardind</string>
+    <string name="catalog">Каталог</string>
+    <string name="less">&#60;</string>
+    <string name="more">&#62;</string>
+    <string name="profile">профиль</string>
 </resources>
