@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/android/mobilka/app/src/main/res/drawable/btn_background.xml" value="0.1685" />
         <entry key="..\:/android/mobilka/app/src/main/res/drawable/et_background.xml" value="0.1685" />
         <entry key="..\:/android/mobilka/app/src/main/res/drawable/ic_basket.xml" value="0.1685" />
         <entry key="..\:/android/mobilka/app/src/main/res/drawable/ic_vector__1_2.xml" value="0.1685" />
@@ -11,8 +12,12 @@
         <entry key="..\:/android/mobilka/app/src/main/res/drawable/tab_indicator_default.xml" value="0.1685" />
         <entry key="..\:/android/mobilka/app/src/main/res/drawable/tab_indicator_selected.xml" value="0.1685" />
         <entry key="..\:/android/mobilka/app/src/main/res/drawable/tab_selector.xml" value="0.1685" />
+        <entry key="..\:/android/mobilka/app/src/main/res/drawable/tv_background.xml" value="0.1685" />
         <entry key="..\:/android/mobilka/app/src/main/res/font/amatic_sc.xml" value="0.4203125" />
         <entry key="..\:/android/mobilka/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/android/mobilka/app/src/main/res/layout/coffee_item.xml" value="0.375" />
+        <entry key="..\:/android/mobilka/app/src/main/res/layout/coffee_item_basket.xml" value="0.6" />
+        <entry key="..\:/android/mobilka/app/src/main/res/layout/dialog_item.xml" value="0.536" />
         <entry key="..\:/android/mobilka/app/src/main/res/layout/fragment_basket.xml" value="0.25" />
         <entry key="..\:/android/mobilka/app/src/main/res/layout/fragment_coffee_list.xml" value="0.375" />
         <entry key="..\:/android/mobilka/app/src/main/res/layout/fragment_home.xml" value="0.25" />

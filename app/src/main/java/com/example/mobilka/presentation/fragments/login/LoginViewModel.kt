@@ -17,6 +17,7 @@ import io.reactivex.rxjava3.schedulers.Schedulers
 
 class LoginViewModel(application: Application): AndroidViewModel(application) {
     private val compositeDisposable = CompositeDisposable()
+    private var coffeeApi: CoffeeApi = getApplication<App>().coffeeApi
 
     private val _error = MutableLiveData<Unit>()
     val error: LiveData<Unit>
@@ -36,6 +37,17 @@ class LoginViewModel(application: Application): AndroidViewModel(application) {
     fun loginWithoutApi(loginRequest: LoginRequest){
         if(loginRequest.login == "root" && loginRequest.password == "toor"){
             _token.value = "token"
+            saveToken(
+                LoginResponse(
+                    token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJodHRwOi8vMC4wLjAuMDo4MDgwLyIsImlzcyI6Imh0dHA6Ly8wLjAuMC4wOjgwODAvIiwibG9naW4iOiJyb290In0.GTSOsAV92PeJ0rwyqYsjHDJaj-Q-XdkrO1A08BRE560",
+                    mail = "jhzslkflksj@sdk.sd",
+                    login = "shdkfjdhksdjh",
+                    name_icon = "ijsdjak.png"
+
+
+
+                )
+            )
         }else{
             _error.value = Unit
         }
@@ -44,8 +56,8 @@ class LoginViewModel(application: Application): AndroidViewModel(application) {
     }
 
     //запрос на сервер для входа
-    fun login(coffeeApi: CoffeeApi?, loginRequest: LoginRequest){
-        coffeeApi?.let{
+    fun login(loginRequest: LoginRequest){
+        coffeeApi.let{
             compositeDisposable.add(coffeeApi.login(loginRequest)
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())

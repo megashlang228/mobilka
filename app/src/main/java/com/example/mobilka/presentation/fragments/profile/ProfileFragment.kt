@@ -6,6 +6,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.Navigation
+import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.fragment.findNavController
 import com.example.mobilka.R
 import com.example.mobilka.databinding.FragmentLoginBinding
@@ -38,5 +40,11 @@ class ProfileFragment : Fragment(R.layout.fragment_profile){
             binding.btnMail.text = it
         }
         profileViewModel.getPref()
+        binding.btnLogout.setOnClickListener{
+            profileViewModel.logout()
+            Navigation.findNavController(requireActivity(), R.id.ContainerView)
+                .navigate(R.id.action_homeFragment_to_welcomeFragment)
+
+        }
     }
 }

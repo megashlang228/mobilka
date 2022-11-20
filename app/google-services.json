@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "688844841828",
+    "project_id": "megashlang-9dccc",
+    "storage_bucket": "megashlang-9dccc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:688844841828:android:97493f0043b8ab482b5071",
+        "android_client_info": {
+          "package_name": "com.example.mobilka"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "688844841828-ceplqki4cm945misuuunp1vvs1bscd29.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0fogfRzVMy4XlveTc3SzZIjc_GnBAfTs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "688844841828-ceplqki4cm945misuuunp1vvs1bscd29.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

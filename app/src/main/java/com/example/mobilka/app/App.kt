@@ -2,6 +2,7 @@ package com.example.mobilka.app
 
 import android.app.Application
 import com.example.mobilka.remote.CoffeeApi
+import com.example.mobilka.services.BasketServices
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
@@ -10,6 +11,8 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 
 class App: Application() {
+
+    val basketServices = BasketServices()
 
     lateinit var coffeeApi: CoffeeApi
 

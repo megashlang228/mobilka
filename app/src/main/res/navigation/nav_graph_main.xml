@@ -6,7 +6,7 @@
 
     <fragment
         android:id="@+id/basketFragment"
-        android:name="com.example.mobilka.presentation.fragments.BasketFragment"
+        android:name="com.example.mobilka.presentation.fragments.basket.BasketFragment"
         android:label="BasketFragment" />
     <fragment
         android:id="@+id/profileFragment"

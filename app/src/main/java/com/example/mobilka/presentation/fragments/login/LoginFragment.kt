@@ -1,16 +1,13 @@
 package com.example.mobilka.presentation.fragments.login
 
-import android.content.Context
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import com.example.mobilka.R
-import com.example.mobilka.app.App
 import com.example.mobilka.databinding.FragmentLoginBinding
 import com.example.mobilka.model.login.LoginRequest
 
@@ -78,20 +75,19 @@ class LoginFragment : Fragment(R.layout.fragment_login){
                 launchRegistrationMode()
             }
             btnLoginIn.setOnClickListener{
-                loginViewModel.login((activity?.application as App).coffeeApi,
-                    LoginRequest(
+                loginViewModel.login(LoginRequest(
                         login = binding.etLogin.text.toString(),
                         password = binding.etPassword.text.toString(),
                     )
                 )
 
 
-                /*loginViewModel.loginWithoutApi(
-                    LoginRequest(
-                        login = binding.etLogin.text.toString(),
-                        password = binding.etPassword.text.toString()
-                    )
-                )*/
+//                loginViewModel.loginWithoutApi(
+//                    LoginRequest(
+//                        login = binding.etLogin.text.toString(),
+//                        password = binding.etPassword.text.toString()
+//                    )
+//                )
 
             }
         }
