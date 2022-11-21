@@ -30,9 +30,14 @@ class BasketViewModel(application: Application): AndroidViewModel(application) {
     val basketList: LiveData<List<BasketModel>>
         get() = _basketList
 
+    private val _sum = MutableLiveData<Int>()
+    val sum: LiveData<Int>
+        get() = _sum
+
     init {
         listener = {
             _basketList.value = it
+            _sum.value = summ(it)
         }
         basketServices.addListener(listener)
     }
@@ -43,6 +48,14 @@ class BasketViewModel(application: Application): AndroidViewModel(application) {
 
     fun decrement(item: String){
         basketServices.decrementItem(item)
+    }
+
+    fun summ(list: List<BasketModel>) : Int {
+        var counter = 0
+        for(i in list){
+            counter += i.count * i.price
+        }
+        return counter
     }
 
     override fun onCleared() {

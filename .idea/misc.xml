@@ -4,11 +4,20 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/android/mobilka/app/src/main/res/drawable/btn_background.xml" value="0.1685" />
+        <entry key="..\:/android/mobilka/app/src/main/res/drawable/coffee_item_basket_btn_background.xml" value="0.1685" />
+        <entry key="..\:/android/mobilka/app/src/main/res/drawable/coffee_item_basket_tv_background.xml" value="0.1685" />
         <entry key="..\:/android/mobilka/app/src/main/res/drawable/et_background.xml" value="0.1685" />
         <entry key="..\:/android/mobilka/app/src/main/res/drawable/ic_basket.xml" value="0.1685" />
+        <entry key="..\:/android/mobilka/app/src/main/res/drawable/ic_decrement.xml" value="0.1685" />
+        <entry key="..\:/android/mobilka/app/src/main/res/drawable/ic_decrement_blue.xml" value="0.1685" />
+        <entry key="..\:/android/mobilka/app/src/main/res/drawable/ic_increment.xml" value="0.1685" />
+        <entry key="..\:/android/mobilka/app/src/main/res/drawable/ic_increment_blue.xml" value="0.1685" />
         <entry key="..\:/android/mobilka/app/src/main/res/drawable/ic_vector__1_2.xml" value="0.1685" />
         <entry key="..\:/android/mobilka/app/src/main/res/drawable/ic_vp1_1.xml" value="0.1685" />
+        <entry key="..\:/android/mobilka/app/src/main/res/drawable/ic_vp_2.xml" value="0.121" />
         <entry key="..\:/android/mobilka/app/src/main/res/drawable/splash_screen.xml" value="0.1" />
+        <entry key="..\:/android/mobilka/app/src/main/res/drawable/tab_background.xml" value="0.1685" />
+        <entry key="..\:/android/mobilka/app/src/main/res/drawable/tab_background_unselected.xml" value="0.121" />
         <entry key="..\:/android/mobilka/app/src/main/res/drawable/tab_indicator_default.xml" value="0.1685" />
         <entry key="..\:/android/mobilka/app/src/main/res/drawable/tab_indicator_selected.xml" value="0.1685" />
         <entry key="..\:/android/mobilka/app/src/main/res/drawable/tab_selector.xml" value="0.1685" />
@@ -26,7 +35,7 @@
         <entry key="..\:/android/mobilka/app/src/main/res/layout/fragment_on_boarding.xml" value="0.375" />
         <entry key="..\:/android/mobilka/app/src/main/res/layout/fragment_profile.xml" value="0.4" />
         <entry key="..\:/android/mobilka/app/src/main/res/layout/fragment_splash.xml" value="0.264" />
-        <entry key="..\:/android/mobilka/app/src/main/res/layout/fragment_tea_list.xml" value="0.4" />
+        <entry key="..\:/android/mobilka/app/src/main/res/layout/fragment_tea_list.xml" value="0.536" />
         <entry key="..\:/android/mobilka/app/src/main/res/layout/fragment_view_pager1.xml" value="0.4" />
         <entry key="..\:/android/mobilka/app/src/main/res/layout/fragment_view_pager2.xml" value="0.4" />
         <entry key="..\:/android/mobilka/app/src/main/res/layout/fragment_view_pager3.xml" value="0.375" />

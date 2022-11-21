@@ -17,7 +17,7 @@ import com.squareup.picasso.Picasso
 class RcViewAdapter(private val category: String):RecyclerView.Adapter<RcViewAdapter.ViewHolder>() {
 
     var onItemClickListener: ((ItemFromCatalog) -> Unit)? = null
-    private val list = mutableListOf<ItemFromCatalog>()
+    private var list = listOf<ItemFromCatalog>()
 
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val imgView: ImageView = view.findViewById(R.id.img_coffee)
@@ -56,8 +56,8 @@ class RcViewAdapter(private val category: String):RecyclerView.Adapter<RcViewAda
 
     fun updateAdapter(newList: List<ItemFromCatalog>){
         // обновляем список
-        list.clear()
-        list.addAll(newList)
+        list = newList
+
         notifyDataSetChanged()
     }
 

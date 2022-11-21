@@ -20,10 +20,10 @@
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/mainBottomNavigationView"
+        style="@style/Widget.MaterialComponents.BottomNavigationView.Colored"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/et_background"
-        app:itemIconTint="@color/white"
+        android:background="@color/blue_background"
         app:labelVisibilityMode="unlabeled"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

@@ -12,8 +12,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center|fill_horizontal"
-        android:layout_marginStart="40dp"
-        android:layout_marginEnd="40dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -28,40 +28,40 @@
             android:fontFamily="@font/amatic"
             android:text="TextView"
             android:textColor="@color/white"
-            android:textSize="24sp" />
+            android:textSize="20sp" />
 
         <ImageButton
             android:id="@+id/btn_decrement_basket"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
             android:layout_gravity="center_vertical"
             android:layout_weight="0"
-            android:background="@drawable/btn_background"
-            app:srcCompat="@drawable/ic_decrement" />
+            android:background="@drawable/coffee_item_basket_btn_background"
+            app:srcCompat="@drawable/ic_decrement_white" />
 
         <TextView
             android:id="@+id/tv_count_basket"
-            android:layout_width="40dp"
-            android:layout_height="25dp"
+            android:layout_width="35dp"
+            android:layout_height="20dp"
             android:layout_gravity="center_vertical"
             android:layout_marginStart="15dp"
             android:layout_marginEnd="15dp"
             android:layout_weight="0"
-            android:background="@drawable/tv_background"
+            android:background="@drawable/coffee_item_basket_tv_background"
             android:fontFamily="@font/gilroy"
-            android:text="1"
             android:textAlignment="center"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
-            android:textColor="@color/blue_background" />
+            android:textColor="@color/white"
+            android:textSize="16sp" />
 
         <ImageButton
             android:id="@+id/btn_increment_basket"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
             android:layout_gravity="center_vertical"
             android:layout_weight="0"
-            android:background="@drawable/btn_background"
-            app:srcCompat="@drawable/ic_increment" />
+            android:background="@drawable/coffee_item_basket_btn_background"
+            app:srcCompat="@drawable/ic_increment_white" />
 
     </LinearLayout>
 </androidx.cardview.widget.CardView>

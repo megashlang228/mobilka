@@ -28,8 +28,8 @@ class BasketServices {
         list = copy
         val oldIndex = list.indexOfFirst { it.item == item.item }
         if (oldIndex != -1) {
-            val element = list[oldIndex]
-                element.count++
+            val updatedElement = list[oldIndex].copy(count = list[oldIndex].count + 1)
+            list[oldIndex] = updatedElement
             }
         else{
             list.add(
@@ -49,8 +49,8 @@ class BasketServices {
             val copy = mutableListOf<BasketModel>()
             copy.addAll(list)
             list = copy
-            val element = list[oldIndex]
-            element.count++
+            val updatedElement = list[oldIndex].copy(count = list[oldIndex].count + 1)
+            list[oldIndex] = updatedElement
             notifyChanges()
         }
     }
@@ -58,13 +58,13 @@ class BasketServices {
     fun decrementItem(item: String) {
         val oldIndex = list.indexOfFirst { it.item == item }
             if (oldIndex != -1) {
-                val element = list[oldIndex]
-                element.count--
-                if (element.count == 0) {
-                    val copy = mutableListOf<BasketModel>()
-                    copy.addAll(list)
-                    list = copy
-                    list.remove(element)
+                val copy = mutableListOf<BasketModel>()
+                copy.addAll(list)
+                list = copy
+                val updatedElement = list[oldIndex].copy(count = list[oldIndex].count - 1)
+                list[oldIndex] = updatedElement
+                if (updatedElement.count == 0) {
+                    list.remove(updatedElement)
                 }
                 notifyChanges()
             }

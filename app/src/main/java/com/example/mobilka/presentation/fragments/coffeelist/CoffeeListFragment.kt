@@ -55,11 +55,9 @@ class CoffeeListFragment : Fragment(R.layout.fragment_coffee_list){
         adapter = RcViewAdapter(screenMode)
         recyclerView.adapter = adapter
         adapter.onItemClickListener = {
-            Log.d("aaa", "name: ${it.item}, count: ${it.item_description}, status: ${it.price}")
             ItemDialog(it, screenMode).show(parentFragmentManager, "")
 
         }
-        coffeeListViewModel.getCatalog()
     }
 
     companion object{

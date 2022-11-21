@@ -1,98 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
 
 
-    <LinearLayout
+    <TextView
+
+        android:id="@+id/tw_tea_list"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_weight="0"
+        android:fontFamily="@font/amatic"
+        android:text="@string/catalog"
+        android:textAlignment="center"
+        android:textColor="@color/blue_background"
+        android:textSize="36sp" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tl_coffe"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:orientation="horizontal">
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_weight="0"
+        app:tabBackground="@drawable/tab_selector"
+        app:tabIndicatorFullWidth="false"
+        app:tabIndicatorHeight="0dp"
+        app:tabSelectedTextColor="@color/white"
+        app:tabTextColor="@color/blue_background">
 
-        <TextView
-
-            android:id="@+id/tw_tea_list"
+        <com.google.android.material.tabs.TabItem
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="56dp"
-            android:layout_weight="1"
-            android:fontFamily="@font/amatic"
-            android:text="@string/catalog"
-            android:textAlignment="center"
-            android:textColor="@color/blue_background"
-            android:textSize="36dp" />
+            android:layout_height="wrap_content" />
 
-        <ImageView
-            android:id="@+id/imageView3"
+        <com.google.android.material.tabs.TabItem
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="16dp"
-            app:srcCompat="@drawable/ic_basket"
-            tools:srcCompat="@drawable/ic_basket" />
-    </LinearLayout>
+            android:layout_height="wrap_content" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:orientation="horizontal">
-
-        <Button
-            android:id="@+id/button3"
-            style="@style/Widget.AppCompat.Button.Borderless"
-            android:layout_width="54dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:backgroundTint="@color/white"
-            android:text="@string/less"
-            android:textColor="@color/blue_background"
-            android:textSize="18sp" />
-
-        <com.google.android.material.tabs.TabLayout
-            android:id="@+id/tl_coffe"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="10">
-
-            <com.google.android.material.tabs.TabItem
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Monday" />
-
-            <com.google.android.material.tabs.TabItem
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Tuesday" />
-
-        </com.google.android.material.tabs.TabLayout>
-
-        <Button
-            android:id="@+id/button2"
-            style="@style/Widget.AppCompat.Button.Borderless"
-            android:layout_width="54dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:backgroundTint="@color/white"
-            android:text="@string/more"
-            android:textColor="@color/blue_background"
-            android:textSize="18sp" />
-
-    </LinearLayout>
+    </com.google.android.material.tabs.TabLayout>
 
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/vp2_coffe"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
         android:layout_marginStart="55dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="55dp"
         android:layout_marginBottom="32dp" />
 
-</androidx.appcompat.widget.LinearLayoutCompat>
+</LinearLayout>

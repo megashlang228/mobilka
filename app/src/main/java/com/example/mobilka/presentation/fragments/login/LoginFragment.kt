@@ -75,19 +75,19 @@ class LoginFragment : Fragment(R.layout.fragment_login){
                 launchRegistrationMode()
             }
             btnLoginIn.setOnClickListener{
-                loginViewModel.login(LoginRequest(
-                        login = binding.etLogin.text.toString(),
-                        password = binding.etPassword.text.toString(),
-                    )
-                )
-
-
-//                loginViewModel.loginWithoutApi(
-//                    LoginRequest(
+//                loginViewModel.login(LoginRequest(
 //                        login = binding.etLogin.text.toString(),
-//                        password = binding.etPassword.text.toString()
+//                        password = binding.etPassword.text.toString(),
 //                    )
 //                )
+
+
+                loginViewModel.loginWithoutApi(
+                    LoginRequest(
+                        login = binding.etLogin.text.toString(),
+                        password = binding.etPassword.text.toString()
+                    )
+                )
 
             }
         }

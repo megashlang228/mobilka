@@ -13,7 +13,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@tools:sample/avatars" />
+        app:srcCompat="@drawable/avatar"
+        tools:srcCompat="@drawable/avatar" />
 
     <TextView
         android:id="@+id/tv_name_dialog"
@@ -21,7 +22,6 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:fontFamily="@font/amatic"
-        android:text="TextView"
         android:textColor="@color/blue_background"
         android:textSize="28sp"
         app:layout_constraintEnd_toEndOf="@+id/img_dialog"
@@ -32,17 +32,20 @@
         android:id="@+id/tv_description_dialog"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
         android:layout_marginTop="8dp"
+        android:layout_marginEnd="40dp"
         android:fontFamily="@font/gilroy"
-        android:text="TextView"
+        android:textAlignment="center"
         android:textColor="@color/blue_background"
-        app:layout_constraintEnd_toEndOf="@+id/tv_name_dialog"
-        app:layout_constraintStart_toStartOf="@+id/tv_name_dialog"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_name_dialog" />
 
     <LinearLayout
         android:layout_width="120dp"
         android:layout_height="40dp"
+        android:layout_marginTop="24dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -55,7 +58,7 @@
             android:layout_height="25dp"
             android:layout_weight="0"
             android:background="@drawable/btn_background"
-            app:srcCompat="@drawable/ic_decrement" />
+            app:srcCompat="@drawable/ic_decrement_blue" />
 
         <TextView
             android:id="@+id/tv_count_basket"
@@ -64,7 +67,11 @@
             android:layout_marginStart="15dp"
             android:layout_marginEnd="15dp"
             android:layout_weight="1"
-            android:background="@drawable/tv_background" />
+            android:background="@drawable/tv_background"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/blue_background"
+            android:textSize="16sp" />
 
         <ImageButton
             android:id="@+id/btn_increment_basket"
@@ -72,7 +79,7 @@
             android:layout_height="25dp"
             android:layout_weight="0"
             android:background="@drawable/btn_background"
-            app:srcCompat="@drawable/ic_increment" />
+            app:srcCompat="@drawable/ic_increment_blue" />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

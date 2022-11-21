@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import androidx.recyclerview.widget.DefaultItemAnimator
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.mobilka.R
 import com.example.mobilka.databinding.FragmentBasketBinding
@@ -35,10 +36,16 @@ class BasketFragment : Fragment(R.layout.fragment_basket){
             basketViewModel.increment(it.item)
         }
         binding.rcBasket.adapter = adapter
-
+        val animator = binding.rcBasket.itemAnimator
+        if(animator is DefaultItemAnimator){
+            animator.supportsChangeAnimations = false
+        }
 
         basketViewModel.basketList.observe(viewLifecycleOwner){
             adapter.list = it
+        }
+        basketViewModel.sum.observe(viewLifecycleOwner){
+            binding.twTeaList3.text = "Итого: $it руб."
         }
     }
 

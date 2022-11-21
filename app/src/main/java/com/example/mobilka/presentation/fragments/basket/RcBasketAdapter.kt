@@ -66,7 +66,7 @@ class RcBasketAdapter(): RecyclerView.Adapter<RcBasketAdapter.BasketViewHolder>(
     override fun onBindViewHolder(holder: BasketViewHolder, position: Int) {
         val item = list[position]
         with(holder){
-            tvName.text = item.item
+            tvName.text = "${item.item} - ${item.price * item.count} руб."
             tvCount.text = item.count.toString()
             btnDecrement.setOnClickListener{
                 decrementClickListener?.invoke(item)

@@ -59,7 +59,7 @@ class CoffeeListViewModel(application: Application): AndroidViewModel(applicatio
             }
     }
 
-    fun getCatalog(){
+    init{
         coffeeList.add(ItemFromCatalog(item = "Экспрессо",price = 120, item_description = "Самый молодой, самый современный, самый быстрый способ приготовления кофе. Недаром на своей родине, в Италии, эспрессо считают «кофейным королем»."))
         coffeeList.add(ItemFromCatalog(item = "Капучино",price = 150, item_description = "это кофе, который состоит из одной части эспрессо, одной части подогретого молока и одной части молочной пены."))
         coffeeList.add(ItemFromCatalog(item = "Американо",price = 110, item_description = "то кофе эспрессо, дополнительно разбавленный водой. Рецепт и название напиток получил как пренебрежительное название «не настоящего» эспрессо, придуманное итальянцами"))
@@ -78,5 +78,6 @@ class CoffeeListViewModel(application: Application): AndroidViewModel(applicatio
 
         _catalogTea.value = teaList
     }
+
 
 }
